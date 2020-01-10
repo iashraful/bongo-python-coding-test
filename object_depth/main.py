@@ -11,6 +11,8 @@ def is_a_class_object(data):
 
 
 def object_depth_checker(data, depth=1):
+    if not isinstance(data, dict):
+        return False, 'Expected Dictionary.'
     for _key, _object in data.items():
         # Getting all the members of the class object
         dictionary = vars(_object) if is_a_class_object(_object) else _object
