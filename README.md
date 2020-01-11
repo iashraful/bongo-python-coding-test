@@ -44,3 +44,5 @@
 #### Explain time and memory complexity.
 Time complexity of the above solution is O(n). This does a simple tree traversal in bottom up fashion.
 And it doesn't require extra memory for holding the array. 
+
+**If you want to change the tree, you need to make a new tree with `Node` class.**
